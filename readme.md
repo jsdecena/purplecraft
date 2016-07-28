@@ -1,0 +1,1 @@
+#### Static html files of purplecraftstudo website
