@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 	<div class="container">
@@ -66,13 +67,13 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 hidden-xs">
 						<ul class="list-unstyled list-inline">
 							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 							<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
-					<div class="col-md-8 copyright">
+					<div class="col-md-8 copyright col-xs-12">
 						<a href="#"><span>&copy; 2016 PURPLECRAFT STUDIO</span> | MANILA Wedding Photography</a>
 					</div>
 				</div>				
@@ -86,6 +87,17 @@
 		$(window).load(function() {
 			$('.flexslider').flexslider({
 				animation: "slide"
+			});
+		});
+
+		$(function(){
+			$(window).scroll(function(){
+				var winTop = $(window).scrollTop();
+				if(winTop >= 168){
+					$("nav").addClass("navbar-fixed-top");
+				}else{
+					$("nav").removeClass("navbar-fixed-top");
+				}
 			});
 		});
 	</script>
