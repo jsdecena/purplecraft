@@ -16,10 +16,10 @@ nav {
 
 nav ul li a {
 	color: #666;
-	text-transform: uppercase;
 	padding: 0 10px;
 	font-weight: 300;
 	font-size: 16px;
+    letter-spacing: 7px;
 }
 
 /*reset*/
@@ -35,13 +35,47 @@ header .navbar-default .navbar-nav>.active>a,
 header .navbar-default .navbar-nav>li>a:hover {
 	color: #567653;
 }
-/*
 
-nav ul li {
-	text-align: center;
+header .navbar-nav > li {
+	text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-right: 30px;
 }
 
-nav ul li a:hover {
-	color: #999;
+footer {
+	margin-bottom: 30px;
+}
+
+footer ul li a i {
+	color: #666;
+}
+
+footer ul li a {
+	font-size: 42px;
+	color: #666;
+}
+
+footer .copyright {
+	font-size: 22px;
+	text-align: right;	
+	padding-right: 35px;
+	line-height: 55px;
+}
+
+footer .copyright a {
+	color: #666;	
+}
+
+footer .copyright a:hover {
 	text-decoration: none;
-}*/
+}
+
+/*flexslider*/
+.flex-direction-nav a {
+	height: 70px;
+}
+.flex-direction-nav a:before {
+	color: #fff;
+	font-size: 60px;
+}
